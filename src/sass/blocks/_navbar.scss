@@ -1,0 +1,24 @@
+.navbar {
+    height: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    &__container {
+        padding-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__link {
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
