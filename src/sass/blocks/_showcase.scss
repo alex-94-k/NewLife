@@ -1,0 +1,21 @@
+.showcase {
+    position: relative;
+    height: 100vh;
+    background: url('../img/main.jpg') center (center/cover) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

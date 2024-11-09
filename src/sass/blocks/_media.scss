@@ -123,5 +123,10 @@
 /* iPhone SE */
 
 @media (max-width: 375px) {
-
+    .showcase {
+        &__title {
+            font-size: 34px;
+            line-height: 42px;
+        }
+    }
 }
