@@ -51,7 +51,7 @@
 
 @media (max-width: 576px) {
     .container {
-        width: 100%;
+        width: 550px;
     }
     .navbar {
         &__menu {
@@ -112,17 +112,38 @@
             }
         }
     }
+    .services {
+        &__layout {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        }
+    }
 }
 
 /* 414px for iPhone XR */
 
 @media (max-width: 414px) {
-
+    .container {
+        width: 380px;
+    }
+    .divider {
+        width: 30%;
+    }
+    .services {
+        &__layout {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
 }
 
 /* iPhone SE */
 
 @media (max-width: 375px) {
+    .container {
+        width: 330px;
+    }
     .showcase {
         &__title {
             font-size: 34px;
