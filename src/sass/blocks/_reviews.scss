@@ -1,0 +1,62 @@
+.reviews {
+    padding: 50px 0 50px 0;
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrapper {
+        margin-top: 50px;
+        height: 150px;
+        display: flex;
+        &-left {
+            justify-content: flex-end;
+        }
+    }
+    &__block {
+        width: 75%;
+        height: 100%;
+        display: grid;
+        grid-template: 1fr / 150px 1fr;
+        gap: 30px;
+        background-image: linear-gradient(135deg, #212ca1 0%, #218ca7 100%);
+        border-radius: 75px;
+        &-left {
+            display: grid;
+            grid-template: 1fr / 1fr 150px;
+        }
+    }
+    &__img {
+        height: 150px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    &__descr {
+        height: 150px;
+        padding: 30px 30px 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-left {
+            padding: 30px 0 30px 30px;
+        }
+    }
+    &__subtitle {
+        color: $red;
+    }
+
+    .autoshow {
+        animation: autoShowAnimation both;
+        animation-timeline: view(70% 5%);
+    }
+
+    @keyframes autoShowAnimation {
+        from {
+            opacity: 0;
+            transform: translateY(200px) scale(0.3);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+}

@@ -63,8 +63,17 @@ img {
     width: 10%;
 }
 
+.title {
+    &-block {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @import 'blocks/navbar';
 @import 'blocks/showcase';
 @import 'blocks/services';
 @import 'blocks/order';
+@import 'blocks/reviews';
 @import 'blocks/media';
