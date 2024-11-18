@@ -1,0 +1,29 @@
+.coffee {
+    padding-top: 50px;
+    height: 700px;
+    &__container {
+        height: 100%;
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+    }
+    &__img {
+        background: url('../img/coffee.jpg') center (center/cover) no-repeat;
+        position: relative;
+        &-title {
+            display: none;
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: $red;
+        padding: 0 50px 0 50px;
+    }
+    &__list {
+        list-style-type: disc;
+    }
+    &__item {
+        padding-top: 20px;
+    }
+}
