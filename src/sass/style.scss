@@ -30,23 +30,41 @@ ul {
 }
 
 .btn {
+    position: relative;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 4px;
     background-image: linear-gradient(135deg, #212ca1 0%, #218ca7 100%);
-    box-shadow: 0 20px 30px -6px rgba(93, 140, 211, 0.5);
+    box-shadow:
+    rgba(45, 35, 66, 0.2) 0 2px 2px,
+    rgba(45, 35, 66, 0.15) 0 7px 13px -3px,
+    #218ca7 0 -1px 0 inset;
     outline: none;
     cursor: pointer;
     border: none;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-        transform: translateY(3px);
-        box-shadow: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    &:focus {
+        box-shadow:
+        #218ca7 0 0 0 1.5px inset,
+          rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+          #218ca7 0 -3px 0 inset;
     }
+    &:hover {
+        box-shadow:
+          rgba(45, 35, 66, 0.3) 0 4px 8px,
+          rgba(45, 35, 66, 0.2) 0 7px 13px -3px,
+          #218ca7 0 -3px 0 inset;
+        transform: translateY(-2px);
+    } 
     &:active {
-        opacity: 0.5;
+        box-shadow: #218ca7 0 3px 7px inset;
+        transform: translateY(2px);
     }
 }
 
