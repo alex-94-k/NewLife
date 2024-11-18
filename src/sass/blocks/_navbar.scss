@@ -1,8 +1,7 @@
 .navbar {
     width: 100%;
     height: 100px;
-    background-color: transparent;
-    backdrop-filter: blur(30px);
+    background-color: $asphalt;
     position: fixed;
     z-index: 20;
     &__container {

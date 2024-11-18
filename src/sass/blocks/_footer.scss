@@ -1,0 +1,32 @@
+.footer {
+    padding: 50px 0 50px 0;
+    background-color: $asphalt;
+    &__container {
+        display: grid;
+        grid-template: 1fr / 25% 50% 25%;
+    }
+    &__copy {
+        padding-right: 25px;
+    }
+    &__schedule {
+        padding: 0 25px 0 25px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    &__item {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contacts {
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}

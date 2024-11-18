@@ -20,6 +20,12 @@
     .container {
         width: 1000px;
     }
+    .footer {
+        &__container {
+            display: grid;
+            grid-template: 1fr / repeat(3, 1fr);
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -42,6 +48,12 @@
         &__text {
             font-size: 12px;
             line-height: 18px;
+        }
+    }
+    .footer {
+        &__container {
+            display: grid;
+            grid-template: 1fr / 20% 45% 35%;
         }
     }
 }
@@ -208,6 +220,20 @@
             line-height: 15px;
         }
     }
+    .footer {
+        margin-top: 50px;
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__schedule {
+            display: none;
+        }
+        &__contacts {
+            display: none;
+        }
+    }
 }
 
 /* 414px for iPhone XR */
@@ -271,5 +297,11 @@
             font-size: 34px;
             line-height: 42px;
         }
+    }
+    .order {
+        margin-top: 50px;
+    }
+    .coffee {
+        margin-top: 50px;
     }
 }
