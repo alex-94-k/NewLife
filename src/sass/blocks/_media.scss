@@ -11,7 +11,34 @@
 /* iPad Air Landscape mode */
 
 @media (max-width: 1180px) {
-    
+    .sidebar {
+        display: none;
+    }
+    .navbar {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 50px 0 50px;
+        }
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__social {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        &__icon {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
 }
 
 /* iPad Mini Landscape mode */
@@ -40,6 +67,11 @@
     .container {
         width: 740px;
     }
+    .navbar {
+        &__container {
+            padding: 25px 15px 0 15px;
+        }
+    }
     .reviews {
         &__block {
             width: 80%;
@@ -64,10 +96,6 @@
     .container {
         width: 750px;
         justify-content: center;
-    }
-    .navbar__menu {
-        width: 100%;
-        padding: 0 30px 0 30px;
     }
     .order {
         &__container {
@@ -150,12 +178,13 @@
         width: 550px;
     }
     .navbar {
-        &__menu {
+        &__wrapper {
             z-index: 20;
             position: fixed;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 40px;
             top: 0;
             left: -100%;
             width: 50%;
@@ -166,6 +195,10 @@
             &-active {
                 left: 0;
             }
+        }
+        &__menu {
+            display: flex;
+            flex-direction: column;
         }
         &__item {
             padding-right: 0;
