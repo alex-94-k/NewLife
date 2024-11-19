@@ -161,6 +161,7 @@
             width: 50%;
             height: 100vh;
             padding: 20px 15px;
+            background-color: rgba(0,0,0, .8);
             transition: 0.6s all;
             &-active {
                 left: 0;
@@ -242,6 +243,9 @@
     .container {
         width: 380px;
     }
+    .navbar {
+        width: 414px;
+    }
     .divider {
         width: 30%;
     }
@@ -291,6 +295,9 @@
 @media (max-width: 375px) {
     .container {
         width: 330px;
+    }
+    .navbar {
+        width: 375px;
     }
     .showcase {
         &__title {
