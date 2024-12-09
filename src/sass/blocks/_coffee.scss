@@ -27,19 +27,3 @@
         padding-top: 20px;
     }
 }
-
-.autotext__left {
-    animation: autoShowTextLeft both;
-    animation-timeline: view(70% 5%);
-}
-
-@keyframes autoShowTextLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-200px) scale(0.3);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-}
